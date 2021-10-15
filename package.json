@@ -1,0 +1,19 @@
+{
+  "name": "tailwind_class_in_css",
+  "version": "1.0.0",
+  "description": "learning to apply tailwind class inside css",
+  "main": "index.html",
+  "scripts": {
+    "buildOnCSS": "npx tailwindcss -i css/style.css -o tailwind.css -w",
+    "buildOnConfig": "npx tailwindcss -o tailwind.css -w",
+    "build": "npm run buildOnCSS && npm run buildOnConfig"
+  },
+  "author": "darwin",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.3.7",
+    "postcss": "^8.3.9",
+    "postcss-cli": "^9.0.1",
+    "tailwindcss": "^2.2.16"
+  }
+}
