@@ -8,7 +8,7 @@
         @apply p-2 cursor-pointer transform hover:-translate-y-0.5;
     }
     .card{
-        @apply border-4 border-white shadow-md;
+        @apply border-4 border-white shadow-md rounded;
     }
     .divider-white{
         @apply w-full h-2 border-t-[1px] border-white;
