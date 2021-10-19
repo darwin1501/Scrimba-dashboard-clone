@@ -1,3 +1,5 @@
+const plugin = require('tailwindcss/plugin')
+
 module.exports = {
   mode: 'jit',
   purge: [
@@ -47,5 +49,26 @@ module.exports = {
       backgroundColor:['active']
     },
   },
-  plugins: [],
+  plugins: [
+    // plugin(function({addUtilities}){
+    //   const newUtilities = {
+    //     '.rotate-5':{
+    //             transform:'rotate(5)'
+    //           }
+    //   }
+    //   addUtilities(newUtilities)
+    // })
+    plugin(function({ addUtilities }) {
+      const newUtilities = {
+        '.rotate-sm':{
+          '--tw-rotate': '0.5deg',
+          'transform': 'var(--tw-transform)'
+        }
+      }
+
+      addUtilities(newUtilities,{
+        variants: ['hover']
+      })
+    })
+  ],
 }
