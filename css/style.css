@@ -5,7 +5,7 @@
 
 @layer components{
     .side-nav-link{
-        @apply p-2 cursor-pointer transform hover:-translate-y-0.5;
+        @apply p-2 cursor-pointer transform hover:-translate-y-0.5 xs:text-xs md:text-lg;
     }
     .card{
         @apply border-4 border-white shadow-md rounded;
