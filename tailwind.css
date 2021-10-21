@@ -668,6 +668,20 @@ video {
   transform: var(--tw-transform);
 }
 
+@media (min-width: 320px) {
+  .side-nav-link {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .side-nav-link {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
 .card {
   border-radius: 0.25rem;
   border-width: 4px;
@@ -834,6 +848,10 @@ video {
   margin-top: 12rem;
 }
 
+.mr-10 {
+  margin-right: 2.5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -888,6 +906,22 @@ video {
 
 .w-20 {
   width: 5rem;
+}
+
+.w-12 {
+  width: 3rem;
+}
+
+.w-14 {
+  width: 3.5rem;
+}
+
+.w-16 {
+  width: 4rem;
+}
+
+.flex-shrink {
+  flex-shrink: 1;
 }
 
 .grid-cols-1 {
@@ -1005,6 +1039,16 @@ video {
   background-color: rgba(255, 128, 128, var(--tw-bg-opacity));
 }
 
+.bg-blue-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(191, 219, 254, var(--tw-bg-opacity));
+}
+
+.bg-gray-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(209, 213, 219, var(--tw-bg-opacity));
+}
+
 .p-2 {
   padding: 0.5rem;
 }
@@ -1096,13 +1140,30 @@ video {
   background-color: rgba(79, 70, 229, var(--tw-bg-opacity));
 }
 
+.dark .dark\:bg-gray-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(31, 41, 55, var(--tw-bg-opacity));
+}
+
 @media (min-width: 320px) {
   .xs\:h-10 {
     height: 2.5rem;
   }
 
-  .xs\:w-11\/12 {
-    width: 91.666667%;
+  .xs\:w-4\/5 {
+    width: 80%;
+  }
+
+  .xs\:w-28 {
+    width: 7rem;
+  }
+
+  .xs\:w-2\/5 {
+    width: 40%;
+  }
+
+  .xs\:flex-shrink {
+    flex-shrink: 1;
   }
 
   .xs\:grid-cols-2 {
@@ -1136,6 +1197,18 @@ video {
     display: block;
   }
 
+  .xs2\:w-28 {
+    width: 7rem;
+  }
+
+  .xs2\:w-32 {
+    width: 8rem;
+  }
+
+  .xs2\:flex-shrink {
+    flex-shrink: 1;
+  }
+
   .xs2\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -1156,6 +1229,26 @@ video {
 @media (min-width: 640px) {
   .sm\:w-2\/6 {
     width: 33.333333%;
+  }
+
+  .sm\:w-20 {
+    width: 5rem;
+  }
+
+  .sm\:w-full {
+    width: 100%;
+  }
+
+  .sm\:w-24 {
+    width: 6rem;
+  }
+
+  .sm\:w-32 {
+    width: 8rem;
+  }
+
+  .sm\:w-28 {
+    width: 7rem;
   }
 
   .sm\:grid-cols-1 {
