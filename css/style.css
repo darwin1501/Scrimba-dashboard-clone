@@ -4,6 +4,11 @@
 
 
 @layer components{
+    .btn-theme{
+        @apply absolute cursor-pointer h-4 w-4 p-3 right-0 mr-5 rounded 
+        bg-gray-300 border-4 border-gray-300 z-10 
+          bg-contain
+    }
     .side-nav-link{
         @apply p-2 cursor-pointer transform hover:-translate-y-0.5;
     }

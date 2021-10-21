@@ -1,6 +1,7 @@
 const plugin = require('tailwindcss/plugin')
 
 module.exports = {
+  important: true,
   mode: 'jit',
   purge: [
     'index.html'
@@ -17,6 +18,10 @@ module.exports = {
       '2xl': '1536px',
     },
     extend: {
+      backgroundImage:{
+        'darkIcon': "url('/img/svg/dark_mode.svg')",
+        'lightIcon': "url('/img/svg/light_mode.svg')"
+      },
       colors:{
         blue:{
             paleBlue: '#e7f1ea'

@@ -9,7 +9,7 @@
 </head>
 <body class="bg-blue-paleBlue h-full">
     <!-- header -->
-    <div class="w-full h-20 bg-white dark:bg-gray-800 flex items-center">
+    <div class="w-full h-20 bg-white dark:bg-gray-800 flex items-center mb-2">
         <div class="flex items-center w-11/12 md:mx-[5%] lg:w-full lg:mx-[1.5%] mx-auto xs:gap-2">
             <div class="flex items-center gap-1 mr-auto">
                 <div class="h-10 w-10 bg-gray-300 rounded flex items-center justify-center">
@@ -27,10 +27,12 @@
             </div>
         </div>
     </div>
-    <div class="w-11/12 mx-auto mb-40  lg:mx-[1%] xl:max-w-screen-xl xl:mr-auto xl:ml-3">
+    <div class="w-11/12 mx-auto mb-40  lg:mx-[1%] xl:max-w-screen-xl xl:mr-auto xl:ml-3 z-0">
+        <!-- dark mode btn -->
+        <div class="btn-theme bg-lightIcon" id="btnTheme"></div>
         <div class="flex flex-col sm:flex-row h-auto">
             <!-- side nav -->
-            <nav class="pt-5 xs:w-4/5 sm:w-2/6 lg:w-[200px]">
+            <nav class=" xs:w-4/5 sm:w-2/6 lg:w-[200px]">
                 <!-- add a second media queries for extra small screens -->
                 <ul class="grid xs:grid-cols-2 xs:grid-rows-3 xs2:grid-cols-3 xs2:grid-rows-2 sm:grid-cols-1 sm:grid-rows-6">                        
                     <li class="side-nav-link w-full h-20 xs:h-10">Lorem</li>
@@ -253,5 +255,6 @@
             <p class="text-xs lg:text-base">Lorem, ipsum <strong>dolor.</strong></p>
         </div>
     </div>
+    <script src="js/index.js"></script>
 </body>
 </html>
