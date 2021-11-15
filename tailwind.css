@@ -668,6 +668,20 @@ video {
   transform: var(--tw-transform);
 }
 
+@media (min-width: 320px) {
+  .side-nav-link {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .side-nav-link {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
 .card {
   border-radius: 0.25rem;
   border-width: 4px;
