@@ -7,26 +7,27 @@
     <link href="tailwind.css" rel="stylesheet">
     <title>tailwind</title>
 </head>
-<body class="bg-blue-paleBlue h-full">
+<body class="dark:bg-gray-900 bg-blue-paleBlue h-full transition-this">
     <!-- header -->
     <div class="w-full h-20 bg-white dark:bg-gray-800 flex items-center mb-2">
         <div class="flex items-center w-11/12 md:mx-[5%] lg:w-full lg:mx-[1.5%] mx-auto xs:gap-2">
             <div class="flex items-center gap-1 mr-auto">
-                <div class="h-10 w-10 bg-gray-300 rounded flex items-center justify-center">
+                <div class="h-10 w-10 dark:bg-gray-600 bg-gray-300 rounded flex items-center justify-center">
                     <p class="text-orange-paleOrange">L</p>
                 </div>
-                <p class="hidden xs2:block">Lorem</p>
+                <p class="hidden xs2:block dark:text-white">Lorem</p>
             </div>
             <div class="xs2:ml-auto flex items-center xs:gap-1 xs2:gap-4">
-                <button class="rounded-full p-2 px-4 bg-indigo-scrimbaIndigo active:bg-indigo-600 text-white xs:text-xs font-semibold">
+                <button class="rounded-full p-2 px-4  dark:hover:bg-indigo-scrimbaIndigo dark:bg-transparent dark:border-2 dark:border-indigo-scrimbaIndigo bg-indigo-scrimbaIndigo active:bg-indigo-600 text-white xs:text-xs font-semibold">
                     Lorem, ipsum.
                 </button>
-                    <p class="w-16 xs2:w-28">Lorem, ipsum.</p>
-                <div class="h-10 w-10 rounded-full bg-yellow-400">
+                    <p class="w-16 xs2:w-28 dark:text-white">Lorem, ipsum.</p>
+                <div class="h-10 w-10 rounded-full bg-contain bg-userIcon">
                 </div>
             </div>
         </div>
     </div>
+    <!-- main containerr -->
     <div class="w-11/12 mx-auto mb-40  lg:mx-[1%] xl:max-w-screen-xl xl:mr-auto xl:ml-3 z-0">
         <!-- dark mode btn -->
         <div class="btn-theme bg-lightIcon" id="btnTheme"></div>
@@ -35,178 +36,178 @@
             <nav class=" xs:w-4/5 sm:w-2/6 lg:w-[200px]">
                 <!-- add a second media queries for extra small screens -->
                 <ul class="grid xs:grid-cols-2 xs:grid-rows-3 xs2:grid-cols-3 xs2:grid-rows-2 sm:grid-cols-1 sm:grid-rows-6">                        
-                    <li class="side-nav-link w-full h-20 xs:h-10">Lorem</li>
-                    <li class="side-nav-link w-full h-20 xs:h-10">ipsum dolor</li>
-                    <li class="side-nav-link w-full h-20 xs:h-10">sit amet</li>
-                    <li class="side-nav-link w-full h-20 xs:h-10">consectetur</li>
-                    <li class="side-nav-link w-full h-20 xs:h-10">adipisicing elit</li>
-                    <li class="side-nav-link w-full h-20 xs:h-10">Lorem</li>
+                    <li class="side-nav-link dark:text-white">Lorem</li>
+                    <li class="side-nav-link dark:text-white">ipsum dolor</li>
+                    <li class="side-nav-link dark:text-white">sit amet</li>
+                    <li class="side-nav-link dark:text-white">consectetur</li>
+                    <li class="side-nav-link dark:text-white">adipisicing elit</li>
+                    <li class="side-nav-link dark:text-white">Lorem</li>
                 </ul>
             </nav>
             <main class="w-full mt-10 ">
-                <p class="text-3xl font-semibold">Lorem, ipsum.</p>
+                <p class="text-3xl font-semibold dark:text-white">Lorem, ipsum.</p>
                 <!-- card container -->
                 <div class="w-full mt-16 mb-20 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-4">
-                    <!-- card -->
+                    <!-- card sub container-->
                     <div class="flex flex-col space-y-10 lg:space-y-5">
-                        <div class="card bg-orange-paleOrange p-2 pb-5 w-full">
-                            <p class="font-bold">Lorem, ipsum.</p>
+                        <div class="card dark:border-gray-700 dark:bg-gray-800 bg-orange-paleOrange p-2 pb-5 w-full ">
+                            <p class="font-bold dark:text-white">Lorem, ipsum.</p>
                             <!-- card content  -->
-                            <div class="flex w-11/12 h-auto bg-white mt-2 p-2 mx-auto shadow-md">
-                                <div class="w-3/5 h-auto bg-blue-paleBlue p-2">
-                                        <p class="text-right text-1xl md:text-2xl">Lorem ipsum dolor sit.</p>
+                            <div class="flex w-11/12 h-auto dark:bg-gray-700 bg-white mt-2 p-2 mx-auto shadow-md">
+                                <div class="w-3/5 h-auto dark:bg-gray-800 bg-blue-paleBlue p-2">
+                                        <p class="text-right text-1xl md:text-2xl dark:text-white">Lorem ipsum dolor sit.</p>
                                 </div>
-                                <div class="w-full h-auto p-2 ">
-                                        <p class="text-xs">Lorem: Lorem, ipsum dolor.</p>
+                                <div class="w-full h-auto p-2">
+                                        <p class="text-xs dark:text-white">Lorem: Lorem, ipsum dolor.</p>
                                         <!-- divider -->
-                                        <div class="divider-dark mt-9/20 md:mt-6/20">
+                                        <div class="divider-dark dark:border-white mt-9/20 md:mt-6/20">
                                         </div>
-                                        <p class="text-xs">72% Lorem: Lorem, ipsum dolor.</p>
+                                        <p class="text-xs dark:text-white">72% Lorem: Lorem, ipsum dolor.</p>
                                 </div>  
                             </div>
                             <!-- buttons -->
                             <div class="w-full mx-auto flex items-center justify-center mt-3 space-x-3">
-                                <div class="btn-circle">
-                                    <p class="text-center">&lt;</p>
+                                <div class="btn-circle dark:bg-gray-800 dark:border-white">
+                                    <p class="text-center dark:text-white">&lt;</p>
                                 </div>
-                                <p class="px-2 text-xs">1 of 3</p>
-                                <div class="btn-circle">
-                                    <p class="text-center">&gt;</p>
+                                <p class="px-2 text-xs dark:text-white">1 of 3</p>
+                                <div class="btn-circle dark:bg-gray-800 dark:border-white">
+                                    <p class="text-center dark:text-white">&gt;</p>
                                 </div>
                             </div>
                         </div>
                         <!-- card -->
-                        <div class="card bg-pink-palePink p-2 pb-5 flex">
-                            <div class="w-2/5 flex justify-center items-center">
-                                <div class="w-10 h-10 bg-orange-orangePumpkin"></div>
+                        <div class="card dark:border-gray-700 dark:bg-gray-800 bg-pink-palePink p-2 pb-2 flex gap-3">
+                            <div class="w-3/5 h-auto dark:bg-gray-900 bg-white p-2">
+                                <p class="text-right text-1xl md:text-2xl dark:text-white">Lorem ipsum dolor sit.</p>
                             </div>
                             <div class="w-full">
-                                <p class="font-semibold">Lorem ipsum dolor sit.</p>
-                                <p class="text-1xl font-bold">No. 43: Lorem, ipsum.</p>
-                                <p class="text-xs mt-14">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <p class="font-semibold dark:text-white">Lorem ipsum dolor sit.</p>
+                                <p class="text-1xl font-bold dark:text-white">No. 43: Lorem, ipsum.</p>
+                                <p class="text-xs mt-14 dark:text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                 <div class="divider-white mt-5"></div>
-                                <p class="text-xs text-right font-semibold">Lorem ipsum dolor sit.</p>
+                                <p class="text-xs text-right font-semibold dark:text-white">Lorem ipsum dolor sit.</p>
                             </div>
                         </div>
                         <!-- card -->
-                        <div class="card bg-orange-orangePumpkin p-2 pb-5 flex">
-                            <div class="w-2/5 flex justify-center items-center">
-                                <div class="w-10 h-10 bg-pink-palePink"></div>
+                        <div class="card dark:border-gray-700 dark:bg-gray-800 bg-orange-orangePumpkin p-2 pb-3 flex gap-3">
+                            <div class="w-3/5 h-auto dark:bg-gray-900 bg-white p-2">
+                                <p class="text-right text-1xl md:text-2xl dark:text-white">Lorem ipsum dolor sit.</p>
                             </div>
                             <div class="w-full">
-                                <p class="font-semibold">Lorem ipsum dolor sit.</p>
-                                <p class="text-sm mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. A maiores nostrum doloremque!</p>
+                                <p class="font-semibold dark:text-white">Lorem ipsum dolor sit.</p>
+                                <p class="text-sm mt-5 dark:text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. A maiores nostrum doloremque!</p>
                                 <div class="divider-white mt-5"></div>
-                                <p class="text-xs text-right font-semibold">Lorem ipsum dolor sit.</p>
+                                <p class="text-xs text-right font-semibold dark:text-white">Lorem ipsum dolor sit.</p>
                             </div>
                         </div>
                         <!-- card -->
-                        <div class="card bg-orange-paleOrange p-2 pb-5 w-full">
-                            <p class="font-bold">Lorem, ipsum.</p>
+                        <div class="card dark:border-gray-700 dark:bg-gray-800 bg-orange-paleOrange p-2 pb-5 w-full">
+                            <p class="font-bold dark:text-white">Lorem, ipsum.</p>
                             <!-- card content  -->
-                            <div class="flex w-11/12 h-auto bg-white mt-2 p-2 mx-auto shadow-md">
-                            <div class="w-3/5 h-auto bg-blue-paleBlue p-2">
-                                    <p class="text-right text-1xl">Lorem ipsum dolor sit.</p>
-                            </div>
-                            <div class="w-full h-auto p-2 ">
-                                    <p class="text-xs">Lorem: Lorem, ipsum dolor.</p>
-                                    <!-- divider -->
-                                    <div class="divider-dark mt-9/20 md:mt-6/20">
-                                    </div>
-                                    <p class="text-xs">72% Lorem: Lorem, ipsum dolor.</p>
-                            </div>  
+                            <div class="flex w-11/12 h-auto dark:bg-gray-700 bg-white mt-2 p-2 mx-auto shadow-md">
+                                <div class="w-3/5 h-auto dark:bg-gray-800 bg-blue-paleBlue p-2">
+                                        <p class="text-right text-1xl dark:text-white">Lorem ipsum dolor sit.</p>
+                                </div>
+                                <div class="w-full h-auto p-2 ">
+                                        <p class="text-xs dark:text-white">Lorem: Lorem, ipsum dolor.</p>
+                                        <!-- divider -->
+                                        <div class="divider-dark dark:border-white mt-9/20 md:mt-6/20">
+                                        </div>
+                                        <p class="text-xs dark:text-white">72% Lorem: Lorem, ipsum dolor.</p>
+                                </div>  
                             </div>
                             <!-- buttons -->
                             <div class="w-full mx-auto flex items-center justify-center mt-3 space-x-3">
-                                <div class="btn-circle">
-                                    <p class="text-center">&lt;</p>
+                                <div class="btn-circle dark:bg-gray-800 dark:border-white">
+                                    <p class="text-center dark:text-white">&lt;</p>
                                 </div>
-                                <p class="px-2 text-xs">1 of 3</p>
-                                <div class="btn-circle">
-                                    <p class="text-center">&gt;</p>
+                                <p class="px-2 text-xs dark:text-white">1 of 3</p>
+                                <div class="btn-circle dark:bg-gray-800 dark:border-white">
+                                    <p class="text-center dark:text-white">&gt;</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- card -->
+                    <!-- card sub container -->
                     <div class="flex flex-col space-y-10 lg:space-y-5">
-                        <div class="card bg-indigo-scrimbaSkyblue p-2 pb-5 flex space-x-3">
+                        <div class="card dark:border-gray-700 dark:bg-gray-800 bg-indigo-scrimbaSkyblue p-2 pb-5 flex space-x-3">
                             <div class="w-2/5 flex justify-center items-center">
-                                <div class="w-20 h-20 bg-white rounded-full"></div>
+                                <div class="w-20 h-20 dark:bg-gray-700 bg-white rounded-full"></div>
                             </div>
                             <div class="w-full">
-                                <p class="font-semibold">Lorem ipsum dolor sit.</p>
-                                <p class="text-sm mt-5">
+                                <p class="font-semibold dark:text-white">Lorem ipsum dolor sit.</p>
+                                <p class="text-sm mt-5 dark:text-white">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam est eaque suscipit, et minus commodi illum consectetur id officia error magnam necessitatibus. Similique sequi, eos iste nulla ratione vel saepe asperiores nisi dolor, perspiciatis vero quas alias, dicta dolorum expedita.
                                 </p>
                                 <div class="divider-white mt-5"></div>
-                                <p class="text-xs text-right font-semibold">Lorem ipsum dolor sit.</p>
+                                <p class="text-xs text-right font-semibold dark:text-white">Lorem ipsum dolor sit.</p>
                             </div>
                         </div>
                         <!-- card -->
-                        <div class="card bg-pink-palePink p-2 pb-5 w-full">
-                            <p class="font-bold">Lorem, ipsum.</p>
+                        <div class="card dark:border-gray-700 dark:bg-gray-800 bg-pink-palePink p-2 pb-5 w-full">
+                            <p class="font-bold dark:text-white">Lorem, ipsum.</p>
                             <!-- card content  -->
-                            <div class="card-sm">
-                                <div class="w-3/5 h-20 rounded-lg bg-pink-ligthPink p-2">
+                            <div class="card-sm dark:bg-gray-700">
+                                <div class="w-3/5 h-20 rounded-lg dark:bg-gray-800 bg-pink-ligthPink p-2">
                                 </div>
                                 <div class="w-full h-auto p-2 ">
-                                    <p class="text-sm font-semibold">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <div class="w-10 mt-2 p-1 px-1 rounded-md bg-blue-paleBlue flex justify-center items-center">
-                                        <p class="text-xs">Free</p>
+                                    <p class="text-sm font-semibold dark:text-white">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <div class="w-10 mt-2 p-1 px-1 rounded-md dark:bg-gray-800 bg-blue-paleBlue flex justify-center items-center">
+                                        <p class="text-xs dark:text-white">Free</p>
                                     </div>
                                     <div class="flex mt-10">
-                                        <p class="text-xs mr-auto">12:00 am - 1:00 am GMT+8</p>
+                                        <p class="text-xs mr-auto dark:text-white">12:00 am - 1:00 am GMT+8</p>
                                         <!-- Sat, 23 Oct -->
-                                        <p class="text-xs ml-auto">Sat, 23 Oct </p>
+                                        <p class="text-xs ml-auto dark:text-white">Sat, 23 Oct </p>
                                     </div>
                                 </div>  
                             </div>
                             <!-- card content  -->
-                            <div class="card-sm">
-                                <div class="w-3/5 h-20 rounded-lg bg-indigo-scrimbaIndigo p-2">
+                            <div class="card-sm dark:bg-gray-700">
+                                <div class="w-3/5 h-20 rounded-lg dark:bg-gray-800 bg-indigo-scrimbaIndigo p-2">
                                 </div>
                                 <div class="w-full h-auto p-2 ">
-                                    <p class="text-sm font-semibold">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <div class="w-10 mt-2 p-1 px-1 rounded-md bg-blue-paleBlue flex justify-center items-center">
-                                        <p class="text-xs">Free</p>
+                                    <p class="text-sm font-semibold dark:text-white">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <div class="w-10 mt-2 p-1 px-1 rounded-md dark:bg-gray-800 bg-blue-paleBlue flex justify-center items-center">
+                                        <p class="text-xs dark:text-white">Free</p>
                                     </div>
                                     <div class="flex mt-10">
-                                        <p class="text-xs mr-auto">12:00 am - 1:00 am GMT+8</p>
+                                        <p class="text-xs mr-auto dark:text-white">12:00 am - 1:00 am GMT+8</p>
                                         <!-- Sat, 23 Oct -->
-                                        <p class="text-xs ml-auto">Sat, 23 Oct </p>
+                                        <p class="text-xs ml-auto dark:text-white">Sat, 23 Oct </p>
                                     </div>
                                 </div>  
                             </div>
                             <!-- card content  -->
-                            <div class="card-sm">
-                                <div class="w-3/5 h-20 rounded-lg bg-yellow-200 p-2">
+                            <div class="card-sm dark:bg-gray-700">
+                                <div class="w-3/5 h-20 rounded-lg dark:bg-gray-800 bg-yellow-200 p-2">
                                 </div>
                                 <div class="w-full h-auto p-2 ">
-                                    <p class="text-sm font-semibold">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <div class="w-10 mt-2 p-1 px-1 rounded-md bg-blue-paleBlue flex justify-center items-center">
-                                        <p class="text-xs">Free</p>
+                                    <p class="text-sm font-semibold dark:text-white">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <div class="w-10 mt-2 p-1 px-1 rounded-md dark:bg-gray-800 bg-blue-paleBlue flex justify-center items-center">
+                                        <p class="text-xs dark:text-white">Free</p>
                                     </div>
                                     <div class="flex mt-10">
-                                        <p class="text-xs mr-auto">12:00 am - 1:00 am GMT+8</p>
+                                        <p class="text-xs mr-auto dark:text-white">12:00 am - 1:00 am GMT+8</p>
                                         <!-- Sat, 23 Oct -->
-                                        <p class="text-xs ml-auto">Sat, 23 Oct </p>
+                                        <p class="text-xs ml-auto dark:text-white">Sat, 23 Oct </p>
                                     </div>
                                 </div>  
                             </div>
                             <!-- card content  -->
-                            <div class="card-sm">
-                                <div class="w-3/5 h-20 rounded-lg bg-red-tomatoe p-2">
+                            <div class="card-sm dark:bg-gray-700">
+                                <div class="w-3/5 h-20 rounded-lg dark:bg-gray-800 bg-red-tomatoe p-2">
                                 </div>
                                 <div class="w-full h-auto p-2 ">
-                                    <p class="text-sm font-semibold">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <div class="w-10 mt-2 p-1 px-1 rounded-md bg-blue-paleBlue flex justify-center items-center">
-                                        <p class="text-xs">Free</p>
+                                    <p class="text-sm font-semibold dark:text-white">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <div class="w-10 mt-2 p-1 px-1 rounded-md dark:bg-gray-800 bg-blue-paleBlue flex justify-center items-center">
+                                        <p class="text-xs dark:text-white">Free</p>
                                     </div>
                                     <div class="flex mt-10">
-                                        <p class="text-xs mr-auto">12:00 am - 1:00 am GMT+8</p>
+                                        <p class="text-xs mr-auto dark:text-white">12:00 am - 1:00 am GMT+8</p>
                                         <!-- Sat, 23 Oct -->
-                                        <p class="text-xs ml-auto">Sat, 23 Oct </p>
+                                        <p class="text-xs ml-auto dark:text-white">Sat, 23 Oct </p>
                                     </div>
                                 </div>  
                             </div>
@@ -219,40 +220,40 @@
         <!-- footer -->
         <footer class="m-0 p-0 md:w-[720px] lg:w-[980px] xl:w-[1100px] grid grid-cols-1 gap-10 xs2:gap-8 md:grid-cols-4 md:gap-0 lg:ml-[1%]">
             <div class="footer-link-group">
-                <p class="footer-link p-1 px-10 rounded-sm bg-white font-bold">Lorem</p>
-                <p class="footer-link md:text-left">Lorem, ipsum dolor.</p>
-                <p class="footer-link md:text-left">Lorem, ipsum.</p>
-                <p class="footer-link md:text-left">Lorem</p>
-                <p class="footer-link md:text-left">Lorem, ipsum dolor.</p>
-                <p class="footer-link md:text-left">Lorem</p>
+                <p class="footer-link p-1 px-10 rounded-sm dark:bg-gray-600 dark:text-white bg-white font-bold">Lorem</p>
+                <p class="footer-link md:text-left dark:text-white">Lorem, ipsum dolor.</p>
+                <p class="footer-link md:text-left dark:text-white">Lorem, ipsum.</p>
+                <p class="footer-link md:text-left dark:text-white">Lorem</p>
+                <p class="footer-link md:text-left dark:text-white">Lorem, ipsum dolor.</p>
+                <p class="footer-link md:text-left dark:text-white">Lorem</p>
             </div>
             <div class="footer-link-group">
-                <p class="footer-link font-semibold md:text-right">Lorem, ipsum dolor.</p>
-                <p class="footer-link md:text-right">Lorem</p>
-                <p class="footer-link md:text-right">Lorem, ipsum.</p>
-                <p class="footer-link md:text-right">Lorem, ipsum.</p>
-                <p class="footer-link md:text-right">Lorem ipsum dolor sit.</p>
-                <p class="footer-link md:text-right">Lorem</p>
+                <p class="footer-link font-semibold md:text-right dark:text-white">Lorem, ipsum dolor.</p>
+                <p class="footer-link md:text-right dark:text-white">Lorem</p>
+                <p class="footer-link md:text-right dark:text-white">Lorem, ipsum.</p>
+                <p class="footer-link md:text-right dark:text-white">Lorem, ipsum.</p>
+                <p class="footer-link md:text-right dark:text-white">Lorem ipsum dolor sit.</p>
+                <p class="footer-link md:text-right dark:text-white">Lorem</p>
             </div>
             <div class="footer-link-group">
-                <p class="footer-link font-semibold md:text-right">Lorem, ipsum dolor.</p>
-                <p class="footer-link md:text-right">Lorem</p>
-                <p class="footer-link md:text-right">Lorem, ipsum.</p>
-                <p class="footer-link md:text-right">Lorem</p>
-                <p class="footer-link md:text-right">Lorem ipsum dolor sit amet.</p>
-                <p class="footer-link md:text-right">Lorem</p>
+                <p class="footer-link font-semibold md:text-right dark:text-white">Lorem, ipsum dolor.</p>
+                <p class="footer-link md:text-right dark:text-white">Lorem</p>
+                <p class="footer-link md:text-right dark:text-white">Lorem, ipsum.</p>
+                <p class="footer-link md:text-right dark:text-white">Lorem</p>
+                <p class="footer-link md:text-right dark:text-white">Lorem ipsum dolor sit amet.</p>
+                <p class="footer-link md:text-right dark:text-white">Lorem</p>
             </div>
             <div class="footer-link-group">
-                <p class="footer-link font-semibold md:text-right">Lorem, ipsum.</p>
-                <p class="footer-link md:text-right">Lorem</p>
-                <p class="footer-link md:text-right">Lorem, ipsum dolor.</p>
-                <p class="footer-link md:text-right">Lorem</p>
-                <p class="footer-link md:text-right">Lorem, ipsum.</p>
-                <p class="footer-link md:text-right">Lorem</p>
+                <p class="footer-link font-semibold md:text-right dark:text-white">Lorem, ipsum.</p>
+                <p class="footer-link md:text-right dark:text-white">Lorem</p>
+                <p class="footer-link md:text-right dark:text-white">Lorem, ipsum dolor.</p>
+                <p class="footer-link md:text-right dark:text-white">Lorem</p>
+                <p class="footer-link md:text-right dark:text-white">Lorem, ipsum.</p>
+                <p class="footer-link md:text-right dark:text-white">Lorem</p>
             </div>
         </footer>
         <div class="mt-48 lg:mt-72 lg:ml-[2%]">
-            <p class="text-xs lg:text-base">Lorem, ipsum <strong>dolor.</strong></p>
+            <p class="text-xs lg:text-base dark:text-white">Lorem, ipsum <strong>dolor.</strong></p>
         </div>
     </div>
     <script src="js/index.js"></script>

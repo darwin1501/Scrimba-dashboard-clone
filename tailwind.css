@@ -676,6 +676,8 @@ video {
 }
 
 .side-nav-link {
+  height: 5rem;
+  width: 100%;
   transform: var(--tw-transform);
   cursor: pointer;
   padding: 0.5rem;
@@ -684,6 +686,12 @@ video {
 .side-nav-link:hover {
   --tw-translate-y: -0.125rem;
   transform: var(--tw-transform);
+}
+
+@media (min-width: 320px) {
+  .side-nav-link {
+    height: 2.5rem;
+  }
 }
 
 .card {
@@ -944,6 +952,14 @@ video {
   gap: 2.5rem !important;
 }
 
+.gap-2 {
+  gap: 0.5rem !important;
+}
+
+.gap-3 {
+  gap: 0.75rem !important;
+}
+
 .space-y-10 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0 !important;
   margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse))) !important;
@@ -996,11 +1012,6 @@ video {
   background-color: rgba(80, 53, 255, var(--tw-bg-opacity)) !important;
 }
 
-.bg-yellow-400 {
-  --tw-bg-opacity: 1 !important;
-  background-color: rgba(251, 191, 36, var(--tw-bg-opacity)) !important;
-}
-
 .bg-orange-paleOrange {
   --tw-bg-opacity: 1 !important;
   background-color: rgba(255, 250, 209, var(--tw-bg-opacity)) !important;
@@ -1036,12 +1047,16 @@ video {
   background-color: rgba(255, 128, 128, var(--tw-bg-opacity)) !important;
 }
 
-.bg-darkIcon {
-  background-image: url('/img/svg/dark_mode.svg') !important;
+.bg-userIcon {
+  background-image: url('img/png/user_icon.png') !important;
 }
 
 .bg-lightIcon {
-  background-image: url('/img/svg/light_mode.svg') !important;
+  background-image: url('img/svg/light_mode.svg') !important;
+}
+
+.bg-contain {
+  background-size: contain !important;
 }
 
 .p-2 {
@@ -1078,6 +1093,14 @@ video {
 
 .pb-5 {
   padding-bottom: 1.25rem !important;
+}
+
+.pb-2 {
+  padding-bottom: 0.5rem !important;
+}
+
+.pb-3 {
+  padding-bottom: 0.75rem !important;
 }
 
 .text-center {
@@ -1126,9 +1149,42 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important;
 }
 
+.transition-this {
+  --tw-transform: translate3d(var(--tw-translate-x), var(--tw-translate-y), 0) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .active\:bg-indigo-600:active {
   --tw-bg-opacity: 1 !important;
   background-color: rgba(79, 70, 229, var(--tw-bg-opacity)) !important;
+}
+
+.dark .dark\:border-2 {
+  border-width: 2px !important;
+}
+
+.dark .dark\:border-indigo-scrimbaIndigo {
+  --tw-border-opacity: 1 !important;
+  border-color: rgba(80, 53, 255, var(--tw-border-opacity)) !important;
+}
+
+.dark .dark\:border-gray-700 {
+  --tw-border-opacity: 1 !important;
+  border-color: rgba(55, 65, 81, var(--tw-border-opacity)) !important;
+}
+
+.dark .dark\:border-white {
+  --tw-border-opacity: 1 !important;
+  border-color: rgba(255, 255, 255, var(--tw-border-opacity)) !important;
+}
+
+.dark .dark\:bg-gray-900 {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgba(17, 24, 39, var(--tw-bg-opacity)) !important;
 }
 
 .dark .dark\:bg-gray-800 {
@@ -1136,11 +1192,31 @@ video {
   background-color: rgba(31, 41, 55, var(--tw-bg-opacity)) !important;
 }
 
-@media (min-width: 320px) {
-  .xs\:h-10 {
-    height: 2.5rem !important;
-  }
+.dark .dark\:bg-gray-600 {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgba(75, 85, 99, var(--tw-bg-opacity)) !important;
+}
 
+.dark .dark\:bg-transparent {
+  background-color: transparent !important;
+}
+
+.dark .dark\:bg-gray-700 {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgba(55, 65, 81, var(--tw-bg-opacity)) !important;
+}
+
+.dark .dark\:text-white {
+  --tw-text-opacity: 1 !important;
+  color: rgba(255, 255, 255, var(--tw-text-opacity)) !important;
+}
+
+.dark .dark\:hover\:bg-indigo-scrimbaIndigo:hover {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgba(80, 53, 255, var(--tw-bg-opacity)) !important;
+}
+
+@media (min-width: 320px) {
   .xs\:w-4\/5 {
     width: 80% !important;
   }
@@ -1323,4 +1399,5 @@ video {
     max-width: 1280px !important;
   }
 }
+
 

@@ -19,8 +19,9 @@ module.exports = {
     },
     extend: {
       backgroundImage:{
-        'darkIcon': "url('/img/svg/dark_mode.svg')",
-        'lightIcon': "url('/img/svg/light_mode.svg')"
+        'darkIcon': "url('img/svg/dark_mode.svg')",
+        'lightIcon': "url('img/svg/light_mode.svg')",
+        'userIcon': "url('img/png/user_icon.png')"
       },
       colors:{
         blue:{
