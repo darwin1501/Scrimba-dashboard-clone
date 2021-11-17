@@ -1,8 +1,9 @@
 const btnTheme = document.getElementById('btnTheme');
 
 
+// get all elements in the body
 const body = document.querySelectorAll('body *')
-
+// add transition for every element that has dark mode version
 for (const element of body) {
     let elementClassName = element.className;
     const regexPattern = /dark:/i
@@ -10,10 +11,7 @@ for (const element of body) {
 
     if(hasDarkClass === true){
         element.classList.add('transition-this');
-    }
-    // console.log(elementClassName);
-    // console.log(hasDarkClass);
-    
+    }    
 }
 
 btnTheme.addEventListener('click',()=>{
@@ -28,5 +26,4 @@ btnTheme.addEventListener('click',()=>{
     btnTheme.classList.remove('bg-darkIcon')
     html.classList.remove('dark')
    }
-   
 })
