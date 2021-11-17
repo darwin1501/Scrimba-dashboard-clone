@@ -1,11 +1,12 @@
 const plugin = require('tailwindcss/plugin')
 
 module.exports = {
+  important: true,
   mode: 'jit',
   purge: [
     'index.html'
   ],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: 'class', // or 'media' or 'class'
   theme: {
     screens: {
       'xs': '320px',
@@ -17,6 +18,11 @@ module.exports = {
       '2xl': '1536px',
     },
     extend: {
+      backgroundImage:{
+        'darkIcon': "url('img/svg/dark_mode.svg')",
+        'lightIcon': "url('img/svg/light_mode.svg')",
+        'userIcon': "url('img/png/user_icon.png')"
+      },
       colors:{
         blue:{
             paleBlue: '#e7f1ea'
